@@ -34,12 +34,15 @@
 (defvar faded-neon-green-1 "#91BC48")
 (defvar faded-neon-gold "#F4F0A9")
 
-(setq-default mode-line-buffer-identification
-              (list (propertize "%12b" 'face
-                                (list :weight 'bold
-                                      :foreground faded-neon-fg))))
 (deftheme custom-theme-faded-neon
   "A low contrast dark theme, similar to Wombat or Zenburn.")
+
+(custom-theme-set-variables
+ 'custom-theme-faded-neon
+ '(mode-line-buffer-identification
+   (list (propertize "%12b" 'face
+                     (list :weight 'bold
+                           :foreground faded-neon-fg)))))
 
 (custom-theme-set-faces
  'custom-theme-faded-neon
@@ -56,9 +59,9 @@
  ;; face for inline completion
  `(ac-completion-face ((t (:foreground ,faded-neon-fg-2 :underline t))))
  ;; face for candidate in menu
- `(ac-candidate-face ((t (:background ,faded-neon-bg+2 :foreground ,faded-neon-bg-3)))) 
+ `(ac-candidate-face ((t (:background ,faded-neon-bg+2 :foreground ,faded-neon-bg-3))))
  ;; face for selected candidate in menu
- `(ac-selection-face ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-fg+1)))) 
+ `(ac-selection-face ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-fg+1))))
  `(popup-face ((t (:backgrounf ,faded-neon-bg+2 :foreground ,faded-neon-bg-3))))
  `(popup-menu-face ((t (:background ,faded-neon-bg+2 :foreground ,faded-neon-bg-3))))
  `(popup-menu-selection-face ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-fg+1))))
@@ -92,7 +95,7 @@
  `(diff-hunk-header ((t (:foreground ,faded-neon-blue :background ,faded-neon-bg))))
  `(diff-refine-change ((t (:background ,faded-neon-bg-2))))
  `(diff-removed ((t (:foreground ,faded-neon-red))))
- 
+
  `(dired-header ((t (:foreground ,faded-neon-green))))
  `(dired-mark ((t (:foreground ,faded-neon-red))))
  `(dired-marked ((t (:foreground ,faded-neon-red))))
@@ -115,6 +118,12 @@
  `(ediff-odd-diff-B ((t (:background ,faded-neon-bg-1))))
  `(ediff-odd-diff-C ((t (:background ,faded-neon-bg-1))))
  `(ediff-odd-diff-Ancestor ((t (:background ,faded-neon-bg-1))))
+
+ `(eshell-prompt ((t (:foreground ,faded-neon-red))))
+ `(eshell-ls-backup ((t (:foreground ,faded-neon-fg-2))))
+ `(eshell-ls-directory ((t (:foreground ,faded-neon-green))))
+ `(eshell-ls-executable ((t (:foreground ,faded-neon-gold :bold t))))
+ `(eshell-ls-symlink ((t (:foreground ,faded-neon-blue))))
 
  `(font-lock-builtin-face ((t (:foreground ,faded-neon-gold))))
  `(font-lock-comment-face ((t (:foreground ,faded-neon-fg-3))))
