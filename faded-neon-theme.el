@@ -157,7 +157,7 @@
  `(isearch ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-fg+1))))
  `(isearch-fail ((t (:foreground ,faded-neon-red))))
  `(lazy-highlight ((t (:background ,faded-neon-bg-3 :foreground ,faded-neon-fg))))
- `(match ((t (:foreground ,faded-neon-gold :background ,faded-neon-bg-1))))
+ `(match ((t (:foreground ,faded-neon-gold :background ,faded-neon-bg-2))))
  `(link ((t (:foreground ,faded-neon-red :underline t))))
  `(link-visited ((t (:foreground ,faded-neon-fg-3 :underline t))))
  `(minibuffer-prompt ((t (:foreground ,faded-neon-blue))))
