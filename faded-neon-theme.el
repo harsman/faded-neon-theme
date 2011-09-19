@@ -161,6 +161,7 @@
  `(gnus-header-content ((t (:foreground ,faded-neon-fg-3 :italic nil))))
 
  `(highlight ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-fg+1))))
+ `(hl-line ((t (:background ,faded-neon-bg-1 :foreground ,faded-neon-fg+1))))
  `(holiday ((t (:foreground ,faded-neon-red))))
  `(ido-first-match ((t (:foreground ,faded-neon-gold))))
  `(ido-only-match ((t (:foreground ,faded-neon-red))))
