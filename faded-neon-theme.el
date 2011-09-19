@@ -42,12 +42,13 @@
  '(mode-line-buffer-identification
    (list (propertize "%12b" 'face
                      (list :weight 'bold
-                           :foreground faded-neon-fg)))))
+                           :foreground faded-neon-fg))))
+ '(gnus-logo-colors `(,faded-neon-bg+2 ,faded-neon-bg+1)))
 
 (custom-theme-set-faces
  'custom-theme-faded-neon
  `(default ((t (:background ,faded-neon-bg :foreground ,faded-neon-fg))))
- `(cursor ((t (:background ,faded-neon-fg+1))))
+ `(cursor ((t (:background ,faded-neon-fg+1 :foreground ,faded-neon-bg-3))))
  `(faded-neon-link ((t (:foreground ,faded-neon-red :weight bold))))
  `(calendar-today ((t (:foreground ,faded-neon-green-1))))
  `(bold ((t (:weight bold))))
@@ -119,6 +120,12 @@
  `(ediff-odd-diff-C ((t (:background ,faded-neon-bg-1))))
  `(ediff-odd-diff-Ancestor ((t (:background ,faded-neon-bg-1))))
 
+ `(erc-notice-face ((t (:foreground ,faded-neon-blue :bold nil))))
+ `(erc-current-nick-face ((t (:foreground ,faded-neon-gold :bold nil))))
+ `(erc-direct-msg-face ((t (:foreground ,faded-neon-red))))
+ `(erc-timestamp-face ((t (:foreground ,faded-neon-gold))))
+ `(erc-prompt-face ((t (:foreground ,faded-neon-red :background ,faded-neon-bg))))
+
  `(eshell-prompt ((t (:foreground ,faded-neon-red))))
  `(eshell-ls-backup ((t (:foreground ,faded-neon-fg-2))))
  `(eshell-ls-directory ((t (:foreground ,faded-neon-green))))
@@ -144,12 +151,22 @@
  `(flyspell-incorrect ((t (:underline "red"))))
  `(fringe ((t (:background ,faded-neon-bg-3 :foreground ,faded-neon-fg-3))))
  `(vertical-border ((t (:background ,faded-neon-bg-3 :foreground ,faded-neon-fg-3))))
+
+ `(gnus-summary-normal-read ((t (:foreground ,faded-neon-fg))))
+ `(gnus-summary-normal-unread ((t (:foreground ,faded-neon-green))))
+ `(gnus-summary-selected ((t (:foreground ,faded-neon-gold :background ,faded-neon-bg-1))))
+ `(gnus-header-from ((t (:foreground ,faded-neon-red-1 :bold nil))))
+ `(gnus-header-subject ((t (:foreground ,faded-neon-green :bold nil))))
+ `(gnus-header-name ((t (:foreground ,faded-neon-fg-3))))
+ `(gnus-header-content ((t (:foreground ,faded-neon-fg-3 :italic nil))))
+
  `(highlight ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-fg+1))))
- `(holiday ((t (:foreground "red"))))
+ `(holiday ((t (:foreground ,faded-neon-red))))
  `(ido-first-match ((t (:foreground ,faded-neon-gold))))
  `(ido-only-match ((t (:foreground ,faded-neon-red))))
  `(ido-incomplete-regexp ((t (:foreground ,faded-neon-fg-3))))
- ;; `(ido-indicator ((t (:foreground ,faded-neon-blue))))
+ `(ido-subdir ((t (:background ,faded-neon-bg-2))))
+ `(ido-indicator ((t (:foreground ,faded-neon-blue))))
  `(info-node ((t (:underline t :bold t :foreground ,faded-neon-red))))
  `(info-xref ((t (:underline t :foreground ,faded-neon-red))))
  `(info-xref-visited ((t (:underline t :foreground ,faded-neon-fg-3))))
@@ -186,7 +203,14 @@
  `(org-todo ((t (:foreground ,faded-neon-red :weight normal))))
  `(org-done ((t (:foreground ,faded-neon-green-1 :weight normal))))
  `(org-table ((t (:foreground ,faded-neon-fg))))
- `(show-paren-mismatch-face ((t (:background "red" :foreground ,faded-neon-fg+1))))
+
+ `(rcirc-prompt ((t (:foreground ,faded-neon-red))))
+ `(rcirc-server ((t (:foreground ,faded-neon-blue))))
+ `(rcirc-nick-in-message ((t (:foreground ,faded-neon-gold))))
+ `(rcirc-other-nick ((t (:foreground ,faded-neon-green))))
+ `(rcirc-timestamp ((t (:foreground ,faded-neon-fg-3))))
+
+ `(show-paren-mismatch-face ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-fg+1))))
  `(text-cursor ((t (:background ,faded-neon-fg+1 :foreground "black"))))
  `(tooltip ((t (:background ,faded-neon-bg+1 :foreground ,faded-neon-fg))))
  `(which-func ((t (:foreground ,faded-neon-gold)))))
