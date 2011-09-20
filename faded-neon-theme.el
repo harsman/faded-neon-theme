@@ -173,7 +173,7 @@
  `(info-xref-visited ((t (:underline t :foreground ,faded-neon-fg-3))))
  `(info-menu-star ((t (:foreground ,faded-neon-red))))
  `(isearch ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-fg+1))))
- `(isearch-fail ((t (:foreground ,faded-neon-red))))
+ `(isearch-fail ((t (:background ,faded-neon-red-1 :foreground ,faded-neon-bg-2))))
  `(lazy-highlight ((t (:background ,faded-neon-bg-3 :foreground ,faded-neon-fg))))
  `(match ((t (:foreground ,faded-neon-gold :background ,faded-neon-bg-2))))
  `(link ((t (:foreground ,faded-neon-red :underline t))))
