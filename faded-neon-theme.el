@@ -43,7 +43,7 @@
    (list (propertize "%12b" 'face
                      (list :weight 'bold
                            :foreground faded-neon-fg))))
- '(gnus-logo-colors `(,faded-neon-bg+2 ,faded-neon-bg+1)))
+ '(gnus-logo-colors (list faded-neon-bg+2 faded-neon-bg+1)))
 
 (custom-theme-set-faces
  'custom-theme-faded-neon
