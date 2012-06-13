@@ -33,12 +33,15 @@
 (defvar faded-neon-green "#CAE682")
 (defvar faded-neon-green-1 "#91BC48")
 (defvar faded-neon-gold "#F4F0A9")
-
-(deftheme custom-theme-faded-neon
+(defvar faded-neon-desc
   "A low contrast dark theme, similar to Wombat or Zenburn.")
 
+(if (< emacs-major-version 24)
+    (deftheme custom-theme-faded-neon faded-neon-desc)
+  (deftheme faded-neon faded-neon-desc))
+
 (custom-theme-set-variables
- 'custom-theme-faded-neon
+ (if (< emacs-major-version 24) 'custom-theme-faded-neon 'faded-neon)
  '(mode-line-buffer-identification
    (list (propertize "%12b" 'face
                      (list :weight 'bold
@@ -46,7 +49,7 @@
  '(gnus-logo-colors (list faded-neon-bg+2 faded-neon-bg+1)))
 
 (custom-theme-set-faces
- 'custom-theme-faded-neon
+ (if (< emacs-major-version 24) 'custom-theme-faded-neon 'faded-neon)
  `(default ((t (:background ,faded-neon-bg :foreground ,faded-neon-fg))))
  `(cursor ((t (:background ,faded-neon-fg+1 :foreground ,faded-neon-bg-3))))
  `(faded-neon-link ((t (:foreground ,faded-neon-red :weight bold))))
@@ -166,7 +169,7 @@
  `(ido-first-match ((t (:foreground ,faded-neon-gold))))
  `(ido-only-match ((t (:foreground ,faded-neon-red))))
  `(ido-incomplete-regexp ((t (:foreground ,faded-neon-fg-3))))
- `(ido-subdir ((t (:background ,faded-neon-bg-2))))
+ `(ido-subdir ((t (:foreground ,faded-neon-fg :background ,faded-neon-bg-2))))
  `(ido-indicator ((t (:foreground ,faded-neon-blue))))
  `(info-node ((t (:underline t :bold t :foreground ,faded-neon-red))))
  `(info-xref ((t (:underline t :foreground ,faded-neon-red))))
@@ -225,7 +228,9 @@
  `(whitespace-tab ((t (:foreground ,faded-neon-fg-3 :background ,faded-neon-bg-1))))
  `(whitespace-trailing ((t (:foreground ,faded-neon-bg-3 :background ,faded-neon-red-1)))))
 
-(provide-theme 'custom-theme-faded-neon)
+(provide-theme
+ (if (< emacs-major-version 24) 'custom-theme-faded-neon 'faded-neon))
+
 
 ;; Local Variables:
 ;; no-byte-compile: t
