@@ -5,7 +5,7 @@ Faded Neon - for late night programming
 Faded Neon is a low contrast, dark Emacs color theme, suitable for using when
 coding at night.
 
-![Screenshot](/screenshot.png)
+![Screenshot](/screenshot.PNG)
 
 ## Installation
 
@@ -18,6 +18,6 @@ to your `.emacs`:
 
 You can now load the theme with `load-theme`:
 
-`M-x load-theme RET zenburn`
+`M-x load-theme RET faded-neon`
 
 This theme should be compatible with both Emacs 23 and 24.
