@@ -7,7 +7,7 @@ coding at night.
 
 ![Screenshot](http://ghostinthecode.net/faded-neon-screenshot.png)
 
-## installation
+## Installation
 
 Download `faded-neon-theme.el` to the directory `~/.emacs.d/themes/`. Add this
 to your `.emacs`:
