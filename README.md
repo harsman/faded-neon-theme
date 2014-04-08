@@ -5,7 +5,7 @@ Faded Neon - for late night programming
 Faded Neon is a low contrast, dark Emacs color theme, suitable for using when
 coding at night.
 
-![Screenshot](/screenshot.PNG)
+![Screenshot](screenshot.PNG)
 
 ## Installation
 
